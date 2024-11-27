@@ -1,9 +1,11 @@
 name: Java CI
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+      - check-ci
     paths-ignore:
       - '.gitignore'
       - '*.md'
